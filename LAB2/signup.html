@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign-up page</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    
+    <body class="background">
+        <nav class="navigation_flex_container">
+            <div class="button"><a href="#">홈으로</a></div>
+            <div class="blank"></div>
+            <div class="button"><a href="login.html">로그인</a></div>
+            <div class="button" style="border-color: grey;"><a href="signup.html">회원가입</a></div>
+        </nav>
+        <div class="header_flex_container">
+            <header><h1>최저가 검색 사이트 1위 <span id="title"> DANAOM </span></h1></header>
+        </div>
+        
+        
+
+       <section>
+        <form action="get" action="http://www.example.com" >
+            <p><label> 이름: <br>
+                <input type="text" name="name" size="25" maxlength="30" placeholder="이름을 입력하세요" 
+                required autofocus> 
+                <span>필수*</span>
+            </label></p>
+            <p><label> 생일:<br>
+                <input type="date" name="date"> 
+                (yyyy-mm-dd)
+            </label></p>
+            <p><label> 성별:<br>
+                <input type="text" name="sex" size = "7" list="sex" required>
+                <datalist id="sex">
+                    <option value="남자"></option>
+                    <option value="여자"></option>
+                    <option value="기타"></option>
+                </datalist>
+                <span>필수*</span>
+            </label></p>
+            <p><label> 휴대전화번호:<br>
+                <input type="tel" name="tel" placeholder="(###) ####  ####" 
+                pattern="\(\d{3}\) \d{4} \d{4}" 
+                required> 
+                <span>필수*</span>
+            </label></p>
+            <p><label> 본인 확인 이메일:<br>
+                <input type="email" name="email" placeholder="name@domain.com" 
+                required>
+                <span>필수*</span>
+            </label></p>
+            <p><label> 알게 된 경로:<br>
+                <input type="text" name="route_to_entrance" list="route_to_entrance" placeholder="하나를 고르세요">
+                <datalist id="route_to_entrance">
+                    <option value="포털 사이트 광고"></option>
+                    <option value="SNS 광고"></option>
+                    <option value="지인 추천"></option>
+                    <option value="포털 사이트 검색"></option>
+                    <option value="SNS 검색"></option>
+                    <option value="기타"></option>
+                </datalist>
+            </label></p>
+            <p><label> 최근 한 달동안 구입한 물건 개수:<br>
+                <input type="number" name="shopping_freq" min="0" max="1000" step="1">
+            </label></p>
+            <p><label> 취미나 관심사:
+                <br>
+                <textarea name="hobby" cols="30" rows="5" placeholder="자유롭게 적어주세요"></textarea>
+            </label></p>
+            
+            <p><label> 아이디:<br>
+                <input type="text" name="id" size="25" maxlength="30" placeholder="아이디를 입력하세요" 
+                required>
+                <span>필수*</span>
+            </label></p>
+            <p><label> 비밀번호:<br>
+                <input type="text" name="pw" size="25" maxlength="30" placeholder="비밀번호를 입력하세요" 
+                required>
+                <span>필수*</span>
+            </label></p>
+            <p><label> 비밀번호 확인:<br>
+                <input type="text" name="pw_check" size="25" maxlength="30" placeholder="비밀번호를 확인해주세요" 
+                required>
+                <span>필수*</span>
+            </label></p>
+            
+            <div class="button_flex_container">
+                <input type="submit" value="Sign up" class="button">
+                <input type="reset" value="Clear" class="button">
+            </div>
+        </form>
+       </section>
+    </body>
+</html>
