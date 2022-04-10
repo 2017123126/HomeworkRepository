@@ -36,7 +36,7 @@ body > #center_align{
     animation-duration: 2s;
 }
 @keyframes moving_header {
-    0% {right: 20px; position: relative;}
+    0% {right: 30px; position: relative;}
     100% {right: 0px; position: relative;}
 }
 
