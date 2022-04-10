@@ -94,6 +94,7 @@ body > #center_align{
     height: 40px;
     margin: 10px;
     padding: 5px;
+    color: black;
     font-size: 1em;
 }
 /*this is because height property doesn't work the same for the input elements and div elements*/
