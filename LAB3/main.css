@@ -154,7 +154,7 @@ section{
     text-align: center;
     color: rgb(65, 65, 65);
 }
-/*to have the same top and bottom space between the picture and the box*/
+
 .selling_item_flex_container > .selling_item_area > .selling_item > em{
     color: chocolate;
     font-size: larger;
@@ -162,7 +162,6 @@ section{
 .selling_item_flex_container > .selling_item_area > .selling_item:hover{
     box-shadow: 0px 0px 8px rgb(177, 177, 177);
 }
-
 .selling_item_flex_container > .selling_item_area > .selling_item > img{
     margin: 5%;
     width: 90%;
