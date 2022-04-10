@@ -137,7 +137,7 @@ section{
 }
 .selling_item_flex_container > .selling_item_area{
     flex: 1 0 270px;
-    height: 300px;
+    height: 330px;
     padding: 10px;
 }
 .selling_item_flex_container > .selling_item_area > .selling_item{
@@ -147,7 +147,7 @@ section{
     align-content: space-around;
 
     width: 300px;
-    height: 270px;
+    height: 300px;
     background: rgb(247, 237, 225);
     border-radius: 10px;
     box-shadow: 0px 0px 4px rgb(177, 177, 177);
@@ -155,8 +155,9 @@ section{
     color: rgb(65, 65, 65);
 }
 /*to have the same top and bottom space between the picture and the box*/
-.selling_item_flex_container > .selling_item_area > .selling_item >div{
-    height: 1em;
+.selling_item_flex_container > .selling_item_area > .selling_item > em{
+    color: chocolate;
+    font-size: larger;
 }
 .selling_item_flex_container > .selling_item_area > .selling_item:hover{
     box-shadow: 0px 0px 8px rgb(177, 177, 177);
@@ -165,7 +166,7 @@ section{
 .selling_item_flex_container > .selling_item_area > .selling_item > img{
     margin: 5%;
     width: 90%;
-    height: 70%;
+    height: 60%;
     transition: transform 2s;
 }
 .selling_item_flex_container > .selling_item_area > .selling_item > img[class = "spin"]:hover{
@@ -173,5 +174,5 @@ section{
 }
 
 .selling_item_flex_container > .selling_item_area > .selling_item > img:hover{
-    transform: scale(1.11, 1.43);
+    transform: scale(1.11, 1.67);
 }
