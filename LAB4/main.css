@@ -1,0 +1,288 @@
+/*the entire background*/
+.background{
+    background-color: antiquewhite;
+}
+
+/*make the entire content center aligned*/
+body{
+    display:flex;
+    justify-content: center;
+}
+body > #center_align{
+    width: 1020px;
+    flex-grow: 0;
+}
+
+/*header*/
+.header_flex_container{
+    display: flex;
+    justify-content: center;
+    font-size: 20pt;
+    background-color: rgb(191, 175, 175);
+}
+
+.header_flex_container > header{
+    width: 100%;
+    padding: 10px;
+    height: fit-content;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+/*apply animation*/
+.header_flex_container > header > h1{
+    animation-name: moving_header;
+    animation-timing-function: cubic-bezier(0, 0, 0, 1);
+    animation-duration: 2s;
+}
+@keyframes moving_header {
+    0% {right: 30px; position: relative;}
+    100% {right: 0px; position: relative;}
+}
+
+#title{
+    font-size: 1.2em;
+    font-family:'Courier New', Courier, monospace;
+    background-color:rgb(150, 198, 171);
+    color: white;
+    
+}
+
+/*top navigation*/
+.navigation_flex_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 10pt;
+}
+@media (max-width:800px){
+    .navigation_flex_container{
+        justify-content: center;
+    }
+}
+
+/*blank item in order to insert a blank space*/
+.navigation_flex_container > .blank {
+    background: none;
+    border: none;
+    flex-grow: 10;
+}
+@media (max-width: 800px) {
+    .navigation_flex_container > .blank { display: none;}
+}
+@media (max-width: 600px){ /*확인 후 수정하기*/
+    #signup_button{ display: none;}
+}
+
+.navigation_flex_container > div{
+    background-color: beige;
+    border: 3px solid rgb(212, 212, 238);
+    color: rgb(158, 158, 164);
+    border-radius: 10px;
+
+    height: 15px;
+    margin: 5px;
+    padding: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.navigation_flex_container > div >a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-grow: 1;
+}
+
+.navigation_flex_container > .category >a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-grow: 1;
+    
+    display: flex;
+    flex-direction: row;
+
+    color: rgb(179, 103, 84);
+    font-size: 11pt;
+}
+.navigation_flex_container > .category > a > div{
+    border-left: 2px solid rgb(177, 177, 177);
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+/*button underneath the form elements for login and signup pages*/
+.button_flex_container{
+    display: flex;
+    width: 50%;
+}
+.button_flex_container >.button{
+    background-color: beige;
+    border: 3px solid rgb(212, 212, 238);
+    border-radius: 10px;
+    
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    color: black;
+    font-size: 1em;
+}
+/*this is because height property doesn't work the same for the input elements and div elements*/
+.button_flex_container > div[class = "button"]{
+    height: 25px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.button_flex_container >.button > a{
+    text-decoration: none;
+}
+/*green for normal buttons:hover*/
+.button:hover{
+    background-color: rgb(150, 198, 171);
+    color: aliceblue;
+}
+/*coral for reset buttons:hover*/
+input[type="reset"]:hover{
+    background-color: coral;
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+/*this is for the main content*/
+
+#section_and_aside_together{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+aside{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    margin: 50px;
+    margin-bottom: 100px;
+    margin-right: 0px;
+    padding: 20px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 180px;  
+
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px rgb(177, 177, 177);
+
+    font-size: larger;
+}
+@media (max-width: 800px){
+    aside{display: none;}
+}
+aside > div{
+    color: rgb(144, 137, 118);
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(177, 177, 177);
+}
+aside > div.selected{
+    color: rgb(179, 103, 84);
+}
+aside > div> ul{
+    display: none;
+    list-style: none;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+}
+aside>div:hover{
+    color: rgb(179, 103, 84);
+}
+aside > div:hover> ul{
+    display: block;
+}
+aside > div.selected> ul{
+    display: block;
+}
+aside > div> ul >li{
+    border-top: 2px solid rgb(177, 177, 177);
+    width: 10em;
+    padding-top: 10px;
+}
+a {
+    text-decoration: none; 
+    color: rgb(177, 177, 177);
+    font-size: medium;
+}
+aside > div> ul >li >a:hover{
+    color: rgb(179, 103, 84);
+}
+aside > div> ul >li >a.selected{
+    color: rgb(179, 103, 84);
+}
+
+
+
+section{
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/*selling items*/
+.selling_item_flex_container{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.selling_item_flex_container > .selling_item_area{
+    flex: 1 0 300px;
+    height: 300px;
+    padding: 0px;
+
+    display: flex;
+    justify-content: flex-start;
+}
+@media (max-width: 900px){
+    .selling_item_flex_container > .selling_item_area{
+        justify-content: center;
+    }
+}
+.selling_item_flex_container > .selling_item_area > .selling_item{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+    width: 270px;
+    height: 270px;
+    background: rgb(247, 237, 225);
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgb(177, 177, 177);
+    text-align: center;
+    color: rgb(65, 65, 65);
+}
+
+.selling_item_flex_container > .selling_item_area > .selling_item > em{
+    color: chocolate;
+    font-size: larger;
+}
+.selling_item_flex_container > .selling_item_area > .selling_item:hover{
+    box-shadow: 0px 0px 8px rgb(177, 177, 177);
+}
+.selling_item_flex_container > .selling_item_area > .selling_item > img{
+    margin: 5%;
+    width: 90%;
+    height: 60%;
+    transition: transform 2s;
+}
+.selling_item_flex_container > .selling_item_area > .selling_item > img[class = "spin"]:hover{
+    transform: rotate(360deg);
+}
+
+.selling_item_flex_container > .selling_item_area > .selling_item > img:hover{
+    transform: scale(1.11, 1.67);
+}
