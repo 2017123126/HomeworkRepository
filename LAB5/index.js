@@ -3,6 +3,7 @@ fetch('product.json')
     if (!response.ok) {
       alert(`HTTP error: ${response.status}`);
     }
+    alert("success");
     return response.json();
   })
   .then( json => initialize(json) )
