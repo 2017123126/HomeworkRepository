@@ -4,8 +4,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
 function makeRequest(){
     fetch("product.json")
-    .then(checkStatus)
-    .then(response => response.json())
+    .then(function(response){
+        alert("Success");
+        return response.json();
+    })
     .then(processData)
     .catch(function(err){
         alert("fetch problem: " + err.message);
