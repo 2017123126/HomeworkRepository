@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "애견용 잠옷 사계절 세트",
+        "category": "애완용품",
+        "price": 10000,
+        "img": "images/item1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "반려견 식기 테이블 세트",
+        "category": "애완용품",
+        "price": 20000,
+        "img": "images/item2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "닌텐도 스위치 올레드 블랙",
+        "category": "컴퓨터",
+        "price": 30000,
+        "img": "images/item3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "접이식 특대형 해멱 풀세트",
+        "category": "래저/스포츠",
+        "price": 20000,
+        "img": "images/item4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "초미풍 발터치 리모콘 선풍기",
+        "category": "생활가전",
+        "price": 40000,
+        "img": "images/item5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "삼성전자 BESPOKE 로봇청소기",
+        "category": "생활가전",
+        "price": 1000000,
+        "img": "images/item6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "스테이크 냉장 1kg",
+        "category": "식료품",
+        "price": 20000,
+        "img": "images/item7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "떠먹는 요구르트",
+        "category": "식료품",
+        "price": 9000,
+        "img": "images/item8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "크로와상 생지 10개",
+        "category": "식료품",
+        "price": 14000,
+        "img": "images/item9.jpg"
+    },
+    {
+        "id": 10,
+        "name": "키위 0.9kg",
+        "category": "식료품",
+        "price": 11000,
+        "img": "images/item10.jpg"
+    }
+]
