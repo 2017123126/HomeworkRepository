@@ -11,7 +11,7 @@ function makeRequest(){
         alert("Success");
         return response.json();
       })
-      .then( json => initialize(json) )
+      //.then(processing data)
       .catch( err => alert(`Fetch problem: ${err.message}`) );
 }
 
