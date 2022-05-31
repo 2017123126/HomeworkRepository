@@ -1,7 +1,7 @@
 fetch('product.json')
   .then( response => {
     if (!response.ok) {
-      throw new Error(`HTTP error: ${response.status}`);
+      alert(`HTTP error: ${response.status}`);
     }
     return response.json();
   })
