@@ -16,5 +16,5 @@ function makeRequest(){
 }
 
 function initialize(products){
-    alert(products);
+    alert(products[1].name);
 }
