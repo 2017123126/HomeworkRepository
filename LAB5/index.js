@@ -11,7 +11,10 @@ function makeRequest(){
         alert("Success");
         return response.json();
       })
-      //.then(processing data)
+      .then(json => initialize(json))
       .catch( err => alert(`Fetch problem: ${err.message}`) );
 }
 
+function initialize(products){
+    alert(products);
+}
