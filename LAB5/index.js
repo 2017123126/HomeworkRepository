@@ -8,13 +8,10 @@ function makeRequest(){
         if (!response.ok) {
           alert(`HTTP error: ${response.status}`);
         }
+        alert("Success");
         return response.json();
       })
       .then( json => initialize(json) )
       .catch( err => alert(`Fetch problem: ${err.message}`) );
 }
 
-function processData(){
-    let products = json;
-    
-}   
