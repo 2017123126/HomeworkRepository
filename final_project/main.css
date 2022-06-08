@@ -166,6 +166,16 @@ body > form > input[class = "button"]:hover{
 }
 
 /*second box*/
+body > form > p > label > input {
+    background-color: beige;
+    border: 6px solid rgb(212, 212, 238);
+    border-radius: 20px;
+    
+    margin: 20px;
+    padding: 10px;
+    color: rgb(97, 97, 97);
+    font-size: 1em;
+}
 #credits-per-semester {
     margin-left: 0px;
     margin-right: 0px;
@@ -273,7 +283,6 @@ button:hover{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30pt;
 }
-
 #others-panel > form {
     background: rgb(238, 228, 216);
     margin: 40px;
@@ -289,6 +298,17 @@ button:hover{
     color: rgb(114, 114, 114);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30pt;
+}
+/*making text boxes bigger in the panels*/
+#cs-panel > form > p > label > input, #others-panel > form > p > label > input {
+    background-color: beige;
+    border: 6px solid rgb(212, 212, 238);
+    border-radius: 20px;
+    
+    margin: 20px;
+    padding: 10px;
+    color: rgb(97, 97, 97);
+    font-size: 1em;
 } 
 
 /*이 과목 추가하기 버튼*/
