@@ -14,12 +14,12 @@ body{
 header{
     display: flex;
     justify-content: center;
-    font-size: 20pt;
+    font-size: 40pt;
     background-color: rgb(191, 175, 175);
 }
 header > h1{
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     height: fit-content;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -38,7 +38,7 @@ header > h1{
     animation-duration: 2s;
 }
 @keyframes moving_header {
-    0% {right: 30px; position: relative;}
+    0% {right: 60px; position: relative;}
     100% {right: 0px; position: relative;}
 }
 
@@ -51,15 +51,15 @@ nav{
 }
 nav > ul > input {
     background-color: beige;
-    border: 3px solid rgb(212, 212, 238);
-    border-radius: 10px;
+    border: 6px solid rgb(212, 212, 238);
+    border-radius: 20px;
     
-    width: 150px;
-    height: 40px;
-    margin: 10px;
-    padding: 5px;
+    width: 300px;
+    height: 80px;
+    margin: 20px;
+    padding: 10px;
     color: black;
-    font-size: 1em;
+    font-size: 2em;
 }
 nav > ul > input:hover{
     background-color: rgb(150, 198, 171);
@@ -69,13 +69,13 @@ nav > ul > input:hover{
 /*main content*/
 body > h1{
     background: rgb(247, 237, 225);
-    padding: 20px;
-    padding-bottom: 5px;
+    padding: 40px;
+    padding-bottom: 10px;
     margin-bottom: 0px;
     
     /*border*/
-    border-radius: 10px;
-    border-width: 2px;
+    border-radius: 20px;
+    border-width: 4px;
     border-color: rgb(187, 187, 187);
     border-style: solid;
     
@@ -88,19 +88,19 @@ body > h1{
     text-align: center;
     color: rgb(65, 65, 65);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 50px;
 }
 body > h2 {
     background: rgb(247, 237, 225);
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
 
     /*border*/
-    border-width: 2px;
+    border-width: 4px;
     border-color: rgb(187, 187, 187);
     border-style: solid;
 
@@ -112,49 +112,53 @@ body > h2 {
     text-align: center;
     color: rgb(140, 140, 140);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: small;
+    font-size: 20pt;
 }
 body > form {
     background: rgb(247, 237, 225);
     padding: 0px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     /*border*/
-    border-width: 2px;
+    border-width: 4px;
     border-color: rgb(187, 187, 187);
     border-style: solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
     /*thinner top border*/
-    border-top-width: 1px;
+    border-top-width: 2px;
 
     /*text*/
     text-align: center;
     color: rgb(114, 114, 114);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
+    font-size: larger;
 }
 body > form > p {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     padding: 0px;
+
+    font-size: 30pt;
 }
 
-/*first and second box "내 정보 불러오기" "내 정보"*/
+/*first and second box "완료" 버튼과 입력 칸*/
 body > form > input {
     background-color: beige;
-    border: 3px solid rgb(212, 212, 238);
-    border-radius: 10px;
+    border: 6px solid rgb(212, 212, 238);
+    border-radius: 20px;
     
-    margin: 10px;
-    padding: 5px;
+    margin: 20px;
+    padding: 10px;
     color: rgb(97, 97, 97);
-    font-size: 1em;
+    font-size: 2em;
 }
 body > form > input[class = "button"] {
-    width: 80px;
+    width: 160px;
 }
 body > form > input[class = "button"]:hover{
     background-color: rgb(150, 198, 171);
@@ -162,32 +166,32 @@ body > form > input[class = "button"]:hover{
 }
 
 /*second box*/
-body > form > div {
+#credits-per-semester {
     margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     
     border-width: 0px;
-    border-top-width: 0.6px;
-    border-bottom-width: 0.6px;
+    border-top-width: 1.2px;
+    border-bottom-width: 1.2px;
     border-style: solid;
     border-color: rgb(187, 187, 187);
 }
 
 /*time table*/
-body > table {
+body > #timetable {
     background: rgb(247, 237, 225);
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     /*border*/
-    border-width: 2px;
+    border-width: 4px;
     border-color: rgb(187, 187, 187);
     border-style: solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
     /*remove top and bottom border*/
     border-top-style: none;
@@ -196,23 +200,23 @@ body > table {
     /*text*/
     color: rgb(140, 140, 140);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
+    font-size: larger;
 }
 thead, th {
-    border: 2px solid; 
+    border: 4px solid; 
     border-color : rgb(187, 187, 187);
 }
 
 /*buttons "컴퓨터과학과 전공 과목 추가", "기타 과목 추가"*/
 button{
     background-color: beige;
-    border: 3px solid rgb(212, 212, 238);
-    border-radius: 10px;
+    border: 6px solid rgb(212, 212, 238);
+    border-radius: 20px;
     
-    margin: 10px;
-    padding: 5px;
+    margin: 20px;
+    padding: 10px;
     color: rgb(97, 97, 97);
-    font-size: 1em;
+    font-size: 2em;
 }
 button:hover{
     background-color: rgb(150, 198, 171);
@@ -226,17 +230,17 @@ button:hover{
     justify-content: center;
     flex-direction: column;
 
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 #cs-panel > form{
     background: rgb(238, 228, 216);
-    margin: 20px;
+    margin: 40px;
     margin-bottom: 0px;
 
     /*border*/
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-width: 2px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-width: 4px;
     border-color:  rgb(191, 182, 172);
     border-style: solid;
     border-bottom-style: none;
@@ -245,38 +249,38 @@ button:hover{
     text-align: center;
     color: rgb(114, 114, 114);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
+    font-size: 30pt;
 } 
 #cs-panel > div {
     background: rgb(238, 228, 216);
-    margin: 20px;
+    margin: 40px;
     margin-top: 0px;
-    padding: 20px;
+    padding: 40px;
 
     /*border*/
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-width: 2px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-width: 4px;
     border-color: rgb(187, 187, 187);
     border-style: solid;
 
     /*thinner top border*/
-    border-top-width: 1px;
+    border-top-width: 2px;
     
     /*text*/
     text-align: center;
     color: rgb(70, 70, 70);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
+    font-size: 30pt;
 }
 
 #others-panel > form {
     background: rgb(238, 228, 216);
-    margin: 20px;
+    margin: 40px;
 
     /*border*/
-    border-radius: 10px;
-    border-width: 2px;
+    border-radius: 20px;
+    border-width: 4px;
     border-color:  rgb(191, 182, 172);
     border-style: solid;
 
@@ -284,17 +288,17 @@ button:hover{
     text-align: center;
     color: rgb(114, 114, 114);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
+    font-size: 30pt;
 } 
 
 /*이 과목 추가하기 버튼*/
 #cs-panel > form > input, #others-panel > form  > input {
     background-color: beige;
-    border: 3px solid rgb(212, 212, 238);
-    border-radius: 10px;
+    border: 6px solid rgb(212, 212, 238);
+    border-radius: 20px;
     
-    margin: 10px;
-    padding: 5px;
+    margin: 20px;
+    padding: 10px;
     color: rgb(97, 97, 97);
     font-size: 1em;
 }
@@ -309,5 +313,5 @@ button:hover{
     font-family:'Courier New', Courier, monospace;
     background-color:rgb(150, 198, 171);
     color: white;
-    margin: 5px;
+    margin: 10px;
 }

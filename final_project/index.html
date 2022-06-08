@@ -25,7 +25,7 @@
                 display: none;
                 position: fixed;
                 width: 100%;
-                height: 17em;
+                height: 40em;/*change*/
                 bottom: 0;
                 left: 0;
                 overflow: scroll;
@@ -35,7 +35,7 @@
                 display: none;
                 position: fixed;
                 width: 100%;
-                height: 17em;
+                height: 25em;/*change*/
                 bottom: 0;
                 left: 0;
                 overflow: scroll;
@@ -118,14 +118,14 @@
         <table id="timetable">
             <thead>
                 <tr>
-                    <th style = "border: 2px solid; border-color : rgb(187, 187, 187)">시간</th> <!--change-->
-                    <th style = "border: 2px solid; border-color : rgb(187, 187, 187)">월</th> <!--change-->
-                    <th style = "border: 2px solid; border-color : rgb(187, 187, 187)">화</th> <!--change-->
-                    <th style = "border: 2px solid; border-color : rgb(187, 187, 187)">수</th> <!--change-->
-                    <th style = "border: 2px solid; border-color : rgb(187, 187, 187)">목</th> <!--change-->
-                    <th style = "border: 2px solid; border-color : rgb(187, 187, 187)">금</th> <!--change-->
-                    <th style = "border: 2px solid; border-color : rgb(187, 187, 187)">토</th> <!--change-->
-                    <th style = "border: 2px solid; border-color : rgb(187, 187, 187)">일</th> <!--change-->
+                    <th style = "border: 4px solid; border-color : rgb(187, 187, 187)">시간</th> <!--change-->
+                    <th style = "border: 4px solid; border-color : rgb(187, 187, 187)">월</th> <!--change-->
+                    <th style = "border: 4px solid; border-color : rgb(187, 187, 187)">화</th> <!--change-->
+                    <th style = "border: 4px solid; border-color : rgb(187, 187, 187)">수</th> <!--change-->
+                    <th style = "border: 4px solid; border-color : rgb(187, 187, 187)">목</th> <!--change-->
+                    <th style = "border: 4px solid; border-color : rgb(187, 187, 187)">금</th> <!--change-->
+                    <th style = "border: 4px solid; border-color : rgb(187, 187, 187)">토</th> <!--change-->
+                    <th style = "border: 4px solid; border-color : rgb(187, 187, 187)">일</th> <!--change-->
                 </tr>
             </thead>
             <tbody>
@@ -241,14 +241,14 @@
         for(let i = 0; i < hrsInDay; i++) {
             let x = `
             <tr>
-                <th style = "border: 2px solid; border-color : rgb(187, 187, 187)">${i}-${i + 1}</th> 
-                <td style = "border: 2px solid; border-color : rgb(187, 187, 187)"></td>
-                <td style = "border: 2px solid; border-color : rgb(187, 187, 187)"></td>
-                <td style = "border: 2px solid; border-color : rgb(187, 187, 187)"></td>
-                <td style = "border: 2px solid; border-color : rgb(187, 187, 187)"></td>
-                <td style = "border: 2px solid; border-color : rgb(187, 187, 187)"></td>
-                <td style = "border: 2px solid; border-color : rgb(187, 187, 187)"></td>
-                <td style = "border: 2px solid; border-color : rgb(187, 187, 187)"></td>
+                <th style = "border: 4px solid; border-color : rgb(187, 187, 187)">${i}-${i + 1}</th> 
+                <td style = "border: 4px solid; border-color : rgb(187, 187, 187)"></td>
+                <td style = "border: 4px solid; border-color : rgb(187, 187, 187)"></td>
+                <td style = "border: 4px solid; border-color : rgb(187, 187, 187)"></td>
+                <td style = "border: 4px solid; border-color : rgb(187, 187, 187)"></td>
+                <td style = "border: 4px solid; border-color : rgb(187, 187, 187)"></td>
+                <td style = "border: 4px solid; border-color : rgb(187, 187, 187)"></td>
+                <td style = "border: 4px solid; border-color : rgb(187, 187, 187)"></td>
             </tr>`; //change
             result += x;
         }
