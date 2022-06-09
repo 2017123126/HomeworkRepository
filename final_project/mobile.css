@@ -136,13 +136,16 @@ body > form {
     text-align: center;
     color: rgb(114, 114, 114);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
+    font-size: 1em;
 }
 body > form > p {
     margin-top: 20px;
     margin-bottom: 40px;
     padding: 0px;
 
+    font-size: 30pt;
+}
+#credits-per-semester {
     font-size: 30pt;
 }
 
