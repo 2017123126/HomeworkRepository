@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/main.css">
+        <script src="/detailed_page.js"></script>
+    </head>
+
+    <body class="background">
+        <div id="center_align">
+            <nav class="navigation_flex_container">
+                <div class="button" style="border-color: grey;"><a href="/index.html">홈으로</a></div>
+                <div class="blank"></div>
+                <div class="button"><a href="/login.html">로그인</a></div>
+                <div class="button" id="signup_button"><a href="/signup.html">회원가입</a></div>
+            </nav>
+            <div class="header_flex_container">
+                <header><h1>최저가 검색 사이트 1위 <span id="title"> DANAOM </span></h1></header>
+            </div>
+            
+            <div id="section_and_aside_together">
+                <section class="selling_item_flex_container">
+                    <div class="selling_item_area"><div class="selling_item">
+                        <em>&nbsp;</em>
+                        <img src="<%=product_image%>" alt="<%product_title%>" class="spin">
+                        <%=product_title %>
+                    </div></div>
+                </section>
+                <section class="selling_item_flex_container">
+                    <div class="selling_item_area"><div class="selling_item">
+                        <em>&nbsp;</em>
+                        <p>제품코드: <span id="product_id"><%= product_id%> </span></p>
+                        <p>카테고리: <span id="product_category"><%= product_category%></span></p>
+                        <p>가격: <span id="product_price"><%= product_price%>원</span></p>
+                        <input id="new_comment"  type="text" name="keyword" id = "keyword">
+                        <button id = "comment_button" class="button" type="button">등록하기</button>
+                    </div></div>
+                </section>
+                <aside>
+                    <div class="title"> 댓글
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </body>
+</html>
